@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priority</title>
+
+  <style>
+    body {
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.788);
+      
+    }
+
+    h1 {
+      color: white;
+      font-family: sans-serif;
+    }
+
+    #task-container {
+      width: 100%;
+      height: 80vh;
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid gray;
+    }
+
+    #link-container {
+      display: flex;
+      align-items: center;
+      padding-right: 12px;
+    }
+
+    button {
+      width: 90px;
+      height: 40px;
+      color: black;
+      background-color: rgb(27, 162, 162);
+      cursor: pointer;
+      border-radius: 10px;
+      border: none;
+      margin-right: 5px;
+    }
+
+    button:hover {
+      width: 100px;
+    }
+  </style>
+
+</head>
+<body>
+  <nav>
+    <h1>Priority Task Manager</h1>
+    <div id="link-container">
+
+      <button id="login-btn">Login</button>
+      <button id="signup-btn">Signup</button>
+    </div>
+  </nav>
+
+  <div id="task-container">
+    <button id="create-btn">Create Task</button>
+    <button id="completed-btn">Completed Tasks</button>
+    <button id="urgent-btn">Urgent Tasks</button>
+
+  </div>
+</body>
+</html>
